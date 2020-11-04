@@ -3,6 +3,7 @@ import ContactList from '../ContactList/ContactList'
 import Form from '../Form/Form'
 import {v4 as uuidv4} from 'uuid'
 import Filter from '../Filter/Filter';
+import './PhoneBook.css'
 
 class PhoneBook extends Component {
   state = {
@@ -12,9 +13,6 @@ class PhoneBook extends Component {
   }
 
   addContact = contact => {
-    // this.setState(prev => ({
-    //   contacts: [...prev.contacts, { ...contact,id: uuidv4() }]
-    // }))
     const {name} = contact
     if (this.state.contacts.every((contact) => !contact.name.includes(name))) {
        this.setState(prev => ({
