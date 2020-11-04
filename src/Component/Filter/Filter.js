@@ -4,7 +4,7 @@ class Filter extends Component {
   render() {
     return (
       <div>
-        <label>
+        <label>Search
           <input name="filter" onChange={this.props.onHandleChange} value={this.props.filter} />
         </label>
       </div>
