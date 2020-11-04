@@ -5,8 +5,8 @@ class Filter extends Component {
   render() {
     return (
       <div>
-        <label>Find contacts by name
-          <input name="filter" onChange={this.props.onHandleChange} value={this.props.filter} />
+        <label>
+          <input name="filter" onChange={this.props.onHandleChange} value={this.props.filter} placeholder="Find contacts by name" />
         </label>
       </div>
     );

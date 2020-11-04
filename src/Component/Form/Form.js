@@ -27,11 +27,11 @@ class Form extends Component {
     return (
      <>
       <form className='ContactForm' onSubmit={this.onHandleSubmit}>
-        <label>Name
-          <input onChange={this.onHandleChange} name='name' className="inputName" value={this.state.name} />
+        <label>
+          <input onChange={this.onHandleChange} name='name' className="inputName" value={this.state.name} placeholder="Name" />
           </label>
-           <label>Number
-          <input onChange={this.onHandleChange} name='number' className="inputNumber" value={this.state.number} />
+           <label>
+          <input onChange={this.onHandleChange} name='number' className="inputNumber" value={this.state.number} placeholder="Number" />
         </label>
         <button className="formBtn" type='submit'>Add</button>
       </form>
